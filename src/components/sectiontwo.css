@@ -1,0 +1,166 @@
+.section-two-main-container{
+    width: 100%;
+    margin-block: 3.5rem;
+}
+
+.section-two-container-1{
+    width: 100%;
+}
+
+.section-two-container-1 h1{
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Alata", sans-serif;
+    color: #000000;
+    text-align: left;
+}
+
+.section-two-container-1-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.section-two-container-1-card .card-1,.card-2,.card-3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    min-height: 14rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+}
+
+.card-1{
+    margin-right: 1rem;
+}
+
+.card-3{
+    margin-left: 1rem;
+}
+
+.card-1 img,.card-2 img,.card-3 img{
+    max-height: 12rem;
+}
+
+.card-1 h1{
+    font-family: "Alata", sans-serif;
+    font-size: 1.8rem;
+    color: black;
+    margin-right: 1rem;
+    margin-block: 2rem;
+}
+
+.card-2 h1{
+    font-family: "Alata", sans-serif;
+    font-size: 1.8rem;
+    color: black;
+    margin-right: 1rem;
+    margin-block: 2rem;
+}
+
+.card-3 h1{
+    font-family: "Alata", sans-serif;
+    font-size: 1.8rem;
+    color: black;
+    margin-right: 1rem;
+    margin-block: 2rem;
+}
+
+#arcult-1{
+    display: none;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.card-1:hover h1,
+.card-2:hover h1,
+.card-3:hover h1{
+    color: #ffffff;
+}
+
+
+@media (max-width:960px){
+    .section-two-container-1-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-two-container-1-card .card-1,.card-2,.card-3{
+        width: 100%;
+        margin: 0.6rem 0;
+        min-height: 140px;
+        justify-content: left;
+    }
+
+
+    .section-two-container-1-card .card-1 h1,.card-2 h1,.card-3 h1{
+        margin-left: 4rem;
+    }
+
+    #arcult-1{
+        display: block;
+    }
+
+    #arcult-2{
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+    .card-1 h1,.card-2 h1,.card-3 h1{
+        font-size: 2rem;
+    }
+
+    .section-two-container-1 h1{
+        font-size: 1.8rem;
+    }
+
+    .section-two-container-2 h1{
+        font-size: 1.8rem;
+    }
+}
+
+
+@media(max-width:468px){
+
+    .section-two-container-1 h1{
+        font-size: 1.6rem;
+    }
+
+    .section-two-container-2 h1{
+        font-size: 1.6rem;
+    }
+
+    .long-card-1 img,.long-card-2 img,.long-card-3 img,.long-card-4 img,.long-card-5 img{
+        width: 20%;
+    }
+
+    .long-card-1 h1,.long-card-2 h1,.long-card-3 h1,.long-card-4 h1,.long-card-5 h1{
+        font-size: 1rem;
+    }
+
+    .long-card-1 p{
+        font-size: 0.7rem;
+    }
+}

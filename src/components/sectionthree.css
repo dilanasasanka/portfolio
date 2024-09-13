@@ -1,0 +1,535 @@
+.header {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 15px;
+}
+
+.grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: left;
+}
+
+.grid-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+.grid-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Specific item styling for layout */
+.innoative-solutions {
+    grid-row: span 2;
+    background-image: url('../images/innoative-solutions.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* min-width: 150px; */
+    transition: background-image 0.8s ease-in-out;
+}
+
+
+.innoative-solutions:hover {
+    background-image: url('../images/innoative-solutions\ hover.png');
+}
+
+.innoative-solutions h2 {
+    width: 50%;
+    color: white;
+    font-size: 1.9rem;
+    line-height: 1.2;
+}
+
+.innoative-solutions p {
+    width: 100%;
+    color: white;
+}
+
+.innoative-solutions:hover .yellow-1 {
+    color: white;
+}
+
+.personalized-attention {
+    grid-column: span 2;
+    /* Span across 2 columns */
+    background-image: url('../images/personalized-attention.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* min-height: 150px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.personalized-attention h2 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+}
+
+.personalized-attention:hover {
+    background-image: url('../images/personalized-attention\ hover.png');
+    color: white;
+}
+
+.personalized-attention:hover h2,
+.personalized-attention:hover p {
+    color: white;
+}
+
+.personalized-attention p {
+    width: 75%;
+}
+
+.resourceful-solutions {
+    grid-row: span 2;
+    /* Span across 2 rows */
+    background-image: url('../images/resourceful-solutions.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.resourceful-solutions h2 {
+    font-size: 1.9rem;
+    line-height: 1.2;
+}
+
+.resourceful-solutions:hover {
+    background-image: url('../images/resourceful-solutions\ hover.png');
+}
+
+.resourceful-solutions:hover h2,
+.resourceful-solutions:hover p {
+    color: white;
+}
+
+.seamless-communication {
+    grid-column: 3 / 4;
+    /* Occupy column 3 */
+    background-image: url('../images/seamless-communication.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* min-width: 170px; */
+    transition: background-image 0.8s ease-in-out;
+    
+}
+
+.seamless-communication:hover {
+    background-image: url('../images/seamless-communication\ hover.png');
+
+}
+
+.seamless-communication h2 {
+    font-size: 1.9rem;
+    color: white;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.seamless-communication p {
+    color: white;
+    font-size: 0.9rem;
+    margin: 0;
+    margin-top: 0.3rem;
+    margin-bottom: 4rem;
+}
+
+
+.cutting-edge-expertise {
+    grid-column: 2 / 3;
+    background-image: url('../images/cutting-edge-expertise.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* min-width: 170px; */
+    /* min-height: 200px; */
+    transition: background-image 0.8s ease-in-out;
+}
+
+.cutting-edge-expertise:hover {
+    background-image: url('../images/cutting-edge-expertise\ hover.png');
+}
+
+.cutting-edge-expertise h2 {
+    font-size: 1.9rem;
+    color: white;
+    line-height: 1.2;
+
+}
+
+.cutting-edge-expertise p {
+    color: white;
+    width: 50%;
+}
+
+.punctual-project-completion {
+    grid-column: span 2;
+    /* Span across 2 columns */
+    background-image: url('../images/punctual-project-completion.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.punctual-project-completion:hover {
+    background-image: url('../images/punctual-project-completion\ hover.png');
+}
+
+.punctual-project-completion:hover h2 {
+    color: white;
+}
+
+.punctual-project-completion h2 {
+    width: 78%;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.punctual-project-completion p {
+    width: 65%;
+    color: black;
+}
+
+.team-work {
+    grid-column: span 2;
+    /* Span across 2 columns */
+    color: #fff;
+    background-image: url('../images/team-work.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.team-work:hover {
+    background-image: url('../images/team-work\ hover.png');
+}
+
+.team-work:hover span {
+    color: white;
+}
+
+.team-work h2 {
+    width: 78%;
+    color: white;
+    line-height: 1.2;
+    font-size: 1.9rem;
+}
+
+.team-work p {
+    width: 65%;
+    color: white;
+}
+
+
+/* Define hover effect class */
+.hover-effect {
+    transition: background-image 0.8s ease-in-out;
+}
+
+/* You can also define background image change for hover effect */
+.hover-effect.innoative-solutions {
+    background-image: url('../images/innoative-solutions hover.png');
+}
+
+.yellow-1 {
+    color: #E1B86C;
+}
+
+
+.hover-effect.innoative-solutions .yellow-1 {
+    color: white;
+}
+
+.hover-effect.personalized-attention {
+    background-image: url('../images/personalized-attention hover.png');
+}
+
+
+.hover-effect.personalized-attention h2 {
+    color: white;
+}
+
+.hover-effect.personalized-attention p {
+    color: white;
+}
+
+.hover-effect.resourceful-solutions {
+    background-image: url('../images/resourceful-solutions hover.png');
+}
+
+
+.hover-effect.resourceful-solutions h2 {
+    color: white;
+}
+
+.hover-effect.resourceful-solutions p {
+    color: white;
+}
+
+.hover-effect.seamless-communication {
+    background-image: url('../images/seamless-communication hover.png');
+}
+
+.hover-effect.cutting-edge-expertise {
+    background-image: url('../images/cutting-edge-expertise hover.png');
+}
+
+.hover-effect.punctual-project-completion {
+    background-image: url('../images/punctual-project-completion hover.png');
+}
+
+.hover-effect.punctual-project-completion h2 {
+    color: white;
+}
+
+.hover-effect.team-work {
+    background-image: url('../images/team-work hover.png');
+}
+
+.hover-effect.team-work .yellow-1 {
+    color: white;
+}
+
+.mobile-para{
+    display: block;
+}
+
+
+@media (max-width: 1366px){
+    .grid-item h2{
+        font-size: 1.4rem;
+    }
+
+    .grid-item p{
+        font-size: 1rem;
+    }
+
+    .desktop-para{
+        display: none;
+    }
+
+    .mobile-para{
+        display: block;
+    }
+
+    .seamless-communication p{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 1280px){
+    .grid-item h2{
+        font-size: 1.4rem;
+    }
+
+    .grid-item p{
+        font-size: 1rem;
+    }
+
+    .desktop-para{
+        display: none;
+    }
+
+    .mobile-para{
+        display: block;
+    }
+}
+
+
+@media (max-width: 1280px){
+    .grid-item h2{
+        font-size: 1.2rem;
+    }
+
+    .grid-item p{
+        font-size: 0.8rem;
+    }
+
+    .desktop-para{
+        display: none;
+    }
+
+    .mobile-para{
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .innoative-solutions {
+        grid-column: 1/2;
+        grid-row: 1;
+        background-image: url('../images/innoative-solutions-mobile.png');
+        background-position: bottom;
+        padding-bottom: 6rem;
+    }
+
+    .innoative-solutions:hover {
+        background-image: url('../images/innoative-solutions-mobile-hover.png');
+    }
+
+    .desktop-para{
+        display: none;
+    }
+
+    .mobile-para{
+        display: block;
+    }
+
+    .hover-effect.innoative-solutions {
+        background-image: url('../images/innoative-solutions-mobile-hover.png');
+    }
+
+    .personalized-attention {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    .personalized-attention p{
+        width: 70%;
+    }
+
+    .resourceful-solutions {
+        grid-column: 2/3;
+        grid-row: 1;
+        background-image: url('../images/resourceful-solutions-mobile.png');
+    }
+
+    .resourceful-solutions:hover{
+        background-image: url('../images/resourceful-solutions-mobile-hover.png');
+    }
+
+    .hover-effect.resourceful-solutions{
+        background-image: url('../images/resourceful-solutions-mobile-hover.png');
+    }
+
+
+
+    .cutting-edge-expertise {
+        grid-column: 1 / 2;
+        grid-row: 4;
+        background-image: url('../images/cutting-edge-mobile.png');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    
+    .cutting-edge-expertise:hover {
+        background-image: url('../images/cutting-edge-mobile-hover.png');
+    }
+
+    .hover-effect.cutting-edge-expertise {
+        background-image: url('../images/cutting-edge-mobile-hover.png');
+    }
+
+
+    .seamless-communication {
+        grid-column: 2 / 3;
+        grid-row: 4;
+        background-image: url('../images/seamless-communication-mobile.png');
+    }
+
+    .seamless-communication p{
+        margin-bottom: 4rem;
+    }
+
+    .seamless-communication:hover {
+        background-image: url('../images/seamless-communication-mobile-hover.png');
+    }
+
+    .hover-effect.seamless-communication {
+        background-image: url('../images/seamless-communication-mobile-hover.png');
+    }
+
+    .punctual-project-completion {
+        grid-column: 1 / 2;
+        grid-row: 5;
+        background-image: url('../images/project-completion-mobile.png');
+        background-position: bottom;
+    }
+
+    .punctual-project-completion:hover {
+        background-image: url('../images/project-completion-mobile-hover.png');
+        background-position: bottom;
+    }
+
+    .hover-effect.punctual-project-completion {
+        background-image: url('../images/project-completion-mobile-hover.png');
+        background-position: bottom;
+    }
+
+    .team-work {
+        grid-column: 2 / 3;
+        grid-row: 5;
+        background-image: url('../images/team-work-mobile.png');
+    }
+
+    .team-work h2{
+        width: 100%;
+    }
+
+    .team-work:hover {
+        background-image: url('../images/team-work-mobile-hover.png');
+    }
+
+    .hover-effect.team-work {
+        background-image: url('../images/team-work-mobile-hover.png');
+    }
+
+}

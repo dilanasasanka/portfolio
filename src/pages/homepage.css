@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+.main-container{
+    margin: 0 auto;
+    width: 53%;
+}
+
+
+@media (max-width:768px){
+    .main-container{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
