@@ -542,10 +542,10 @@
 
 @media (max-width: 368px){
     .grid-item h2{
-        font-size: 0.8rem;
+        font-size: 0.5rem;
     }
 
     .grid-item p{
-        font-size: 0.7rem;
+        font-size: 0.4rem;
     }
 }
