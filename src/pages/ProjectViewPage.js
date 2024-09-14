@@ -1,4 +1,5 @@
 // src/pages/ProjectViewPage.js
+import { useEffect } from 'react';
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -7,6 +8,13 @@ import projects from '../data/ProjectsData';
 import './projectviewpage.css';
 
 const ProjectViewPage = () => {
+  useEffect(() => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+    });
+}, []);
+
   const { id } = useParams();
   const project = projects.find((proj) => proj.id === id);
 
