@@ -16,10 +16,10 @@ const ProjectsPage = () => {
     const navigate = useNavigate();
 
     const handleProjectClick = (id) => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
+        // window.scrollTo({
+        //     top: 0,
+        //     behavior: 'smooth'
+        // });
 
         navigate(`/projects/${id}`);
     };
