@@ -28,8 +28,8 @@ const SectionTwo = () => {
         <div className='section-two-container-1-card'>
           <div 
             className='card-1'
-            key={'1'}
-            onClick={() => handleProjectClick('1')}
+            key={'3'}
+            onClick={() => handleProjectClick('3')}
           >
             <img src={artCult2} id='arcult-1' alt='art-cult1' />
             <img src={genify} id='arcult-2' alt='art-cult2' />
@@ -37,8 +37,8 @@ const SectionTwo = () => {
           </div>
           <div 
             className='card-2'
-            key={'2'}
-            onClick={() => handleProjectClick('2')}
+            key={'1'}
+            onClick={() => handleProjectClick('1')}
           >
             <img src={artCult2} id='arcult-1' alt='art-cult1' />
             <img src={artCult} id='arcult-2' alt='art-cult2' />
@@ -46,8 +46,8 @@ const SectionTwo = () => {
           </div>
           <div 
             className='card-3'
-            key={'3'}
-            onClick={() => handleProjectClick('3')}
+            key={'2'}
+            onClick={() => handleProjectClick('2')}
           >
             <img src={artCult2} id='arcult-1' alt='art-cult1' />
             <img src={metrics} id='arcult-2' alt='art-cult2' />
