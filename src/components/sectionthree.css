@@ -533,3 +533,9 @@
     }
 
 }
+
+@media (max-width: 468px){
+    .header{
+        font-size: 1.6rem;
+    }
+}
