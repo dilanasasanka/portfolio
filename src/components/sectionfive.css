@@ -90,3 +90,18 @@
         position: unset;
     }
 }
+
+@media(max-width: 468px){
+    .section-five-container-1 h1{
+        font-size: 1.6rem;
+    }
+
+    .section-five-container-1 p{
+        font-size: 0.9rem;
+    }
+
+    .contact-me-btn{
+        width: 60%;
+        font-size: 1rem;
+    }
+}

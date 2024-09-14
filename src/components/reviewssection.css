@@ -101,3 +101,9 @@
     width: 100%; /* Width of the original content */
     height: 0.0625rem; /* 1px / 16px = 0.0625rem */
 }
+
+@media(max-width:468px){
+    .reviews-section h2{
+        font-size: 1.5rem;
+    }
+}

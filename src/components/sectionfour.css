@@ -41,3 +41,15 @@
 .marquee img{
   width: 5%;
 }
+
+
+@media(max-width: 468px){
+
+  .marquee-container{
+    width: 90%;
+  }
+
+  .marquee img{
+    width: 3%;
+  }
+}
