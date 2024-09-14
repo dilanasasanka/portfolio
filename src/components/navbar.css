@@ -39,3 +39,9 @@
         padding: 2rem 4rem;
     }
 }
+
+@media (max-width:468px){
+    .navbar-container{
+        padding: 2rem 2.5rem;
+    }
+}
